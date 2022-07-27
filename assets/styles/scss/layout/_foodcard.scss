@@ -1,5 +1,6 @@
 h2{
     @include fontsizetoem(20);
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 .food{
@@ -26,6 +27,7 @@ h2{
             }
             &__price{
                 margin-top: auto;
+                margin-bottom: 5px;
                 @include fontsizetoem(20);
             }
         }
@@ -40,7 +42,7 @@ h2{
             margin-top: auto;
             margin-left: auto;
             position: relative;
-            &::before, &::after{
+            &::before{
                 @include crossbar(true);
             }
             &::after{

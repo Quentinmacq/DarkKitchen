@@ -57,52 +57,54 @@ input {
 /* line 1, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 h2 {
   font-size: 1.25em;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
-/* line 5, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 6, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food {
   min-width: 360px;
   width: 360px;
 }
 
-/* line 9, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 10, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card {
   display: flex;
   background-color: #f7f7f7;
   margin: 20px 0;
 }
 
-/* line 13, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 14, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card__container {
   aspect-ratio: 133/100;
   margin-right: 10px;
   height: 100px;
 }
 
-/* line 17, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 18, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card__container__image {
   height: 100%;
 }
 
-/* line 21, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 22, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card .info {
   display: flex;
   flex-direction: column;
 }
 
-/* line 24, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 25, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card .info p {
   display: block;
 }
 
-/* line 27, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 28, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card .info__price {
   margin-top: auto;
+  margin-bottom: 5px;
   font-size: 1.25em;
 }
 
-/* line 32, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 34, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card__add {
   width: 32px;
   height: 32px;
@@ -116,8 +118,8 @@ h2 {
   position: relative;
 }
 
-/* line 43, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
-.food__card__add::before, .food__card__add::after {
+/* line 45, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card__add::before {
   width: 20px;
   height: 5px;
   content: "";
@@ -129,7 +131,7 @@ h2 {
   background-color: #f7f7f7;
 }
 
-/* line 46, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+/* line 48, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
 .food__card__add::after {
   height: 20px;
   width: 5px;
