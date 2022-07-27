@@ -1,0 +1,145 @@
+/* line 1, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+/* line 17, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+footer, header, nav, section, main {
+  display: block;
+}
+
+/* line 21, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 25, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 29, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 33, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 43, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/_reset.scss */
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 1, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+/* line 5, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food {
+  min-width: 360px;
+  width: 360px;
+}
+
+/* line 9, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card {
+  display: flex;
+  background-color: #f7f7f7;
+  margin: 20px 0;
+}
+
+/* line 13, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card__container {
+  aspect-ratio: 133/100;
+  margin-right: 10px;
+  height: 100px;
+}
+
+/* line 17, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card__container__image {
+  height: 100%;
+}
+
+/* line 21, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card .info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 24, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card .info p {
+  display: block;
+}
+
+/* line 27, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card .info__price {
+  margin-top: auto;
+  font-size: 1.25em;
+}
+
+/* line 32, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card__add {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #eb5028;
+  font-weight: bolder;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+/* line 43, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card__add::before, .food__card__add::after {
+  width: 20px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+}
+
+/* line 46, ../../OneDrive/Documents/BeCode/DarkKitchen/assets/styles/scss/layout/_foodcard.scss */
+.food__card__add::after {
+  height: 20px;
+  width: 5px;
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+}
+
+/*# sourceMappingURL=main.css.map */
