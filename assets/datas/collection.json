@@ -1,0 +1,94 @@
+{
+	"pizzas":[
+		{
+			"id":1,
+			"nom": "pizza pepperoni",
+			"base": "tomatoes",
+			"ingredients" : [
+				"mozarella", "pepperoni"
+			],
+			"images" : "pizzapepperoni.jpg",
+			"prix" : 10.25
+		},
+		{
+			"id":2,
+			"nom": "pizza ham",
+			"base": "tomates",
+			"ingredients" : [
+				"mozarella", "ham"
+			],
+			"images" : "pizzaham.jpg",
+			"prix" : 10.15
+		}
+	],
+    "starter":[
+		{
+			"id":1,
+			"nom": "garlic bread",
+			"ingredients" : [
+				"garlic", "bread"
+			],
+			"images" : "garlicbread.jpg",
+			"prix" : 7.25
+		},
+		{
+			"id":2,
+			"nom": "fried calamri",
+			"ingredients" : [
+				"calamari", "fat"
+			],
+			"images" : "friedcalamari.jpg",
+			"prix" : 7.75
+		}
+	],
+    "pasta":[
+		{
+			"id":1,
+			"nom": "pasta bolognaise",
+			"base": "penne",
+			"ingredients" : [
+				"beef", "carrots", "tomato sauce"
+			],
+			"images" : "pastabolo.jpg",
+			"prix" : 10.25
+		},
+        {
+			"id":1,
+			"nom": "pasta carbonara",
+			"base": "penne",
+			"ingredients" : [
+				"eggs", "pecorino", "pancetta"
+			],
+			"images" : "pastabolo.jpg",
+			"prix" : 11.25
+		}
+    ],
+	"drinks":[
+		{
+			"id" : 1,
+			"nom" : "Coca Cola",
+			"type": "soft",
+			"quantity": "25cl",
+			"prix": 1.75
+		},
+		{
+			"id" : 2,
+			"nom" : "Sprite",
+			"type" : "soft",
+			"quantity" : "33cl",
+			"prix" : 2.50
+		}
+	],
+	"desserts" : [
+		{
+			"id":1,
+			"nom": "tiramissu",
+			"prix": 5
+		},
+        {
+			"id":2,
+			"nom": "chocolate mousse",
+			"prix": 2.5
+		}
+	]
+}
