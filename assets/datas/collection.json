@@ -7,7 +7,7 @@
 			"ingredients" : [
 				"mozarella", "pepperoni"
 			],
-			"images" : "pizzapepperoni.jpg",
+			"images" : "pizza_pepperoni.webp",
 			"prix" : 10.25
 		},
 		{
@@ -17,7 +17,7 @@
 			"ingredients" : [
 				"mozarella", "ham"
 			],
-			"images" : "pizzaham.jpg",
+			"images" : "pizza_ham.jpeg",
 			"prix" : 10.15
 		}
 	],
@@ -28,7 +28,7 @@
 			"ingredients" : [
 				"garlic", "bread"
 			],
-			"images" : "garlicbread.jpg",
+			"images" : "garlic_bread.jpg",
 			"prix" : 7.25
 		},
 		{
@@ -37,7 +37,7 @@
 			"ingredients" : [
 				"calamari", "fat"
 			],
-			"images" : "friedcalamari.jpg",
+			"images" : "fried_calamri.jpg",
 			"prix" : 7.75
 		}
 	],
@@ -49,7 +49,7 @@
 			"ingredients" : [
 				"beef", "carrots", "tomato sauce"
 			],
-			"images" : "pastabolo.jpg",
+			"images" : "pasta_bolognaise.jpg",
 			"prix" : 10.25
 		},
         {
@@ -59,11 +59,12 @@
 			"ingredients" : [
 				"eggs", "pecorino", "pancetta"
 			],
-			"images" : "pastabolo.jpg",
+			"images" : "pasta_carbonara.jpg",
 			"prix" : 11.25
 		}
     ],
 	"drinks":[
+		
 		{
 			"id" : 1,
 			"nom" : "Coca Cola",
@@ -83,12 +84,14 @@
 		{
 			"id":1,
 			"nom": "tiramissu",
-			"prix": 5
+			"prix": 5,
+			"images": "tiramisu.jpg" 
 		},
         {
 			"id":2,
 			"nom": "chocolate mousse",
-			"prix": 2.5
+			"prix": 2.5,
+			"images":"../datas/Images/chocolate_mousse.jpg"
 		}
 	]
 }
