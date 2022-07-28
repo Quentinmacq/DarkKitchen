@@ -12,6 +12,3 @@ Tout d'abord, commençons par la composition de la Dream Team. Benoit,Vincent,Gu
 NOus avons commencer par désigné un Leader d'équipe en la présence de Benoit. Il est en charge de gérer le repo et la coordination de l'équipe.
 
 Ensuite, nous décidames d'utiliser la plate forme Trello. Après quelques, échanges, nous fimes par décortiquer le travail demander.
-
-
-

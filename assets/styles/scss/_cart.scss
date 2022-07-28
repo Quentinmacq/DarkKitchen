@@ -1,0 +1,58 @@
+
+.header{
+  &__kitchen {
+    background-color:#32A89C;
+    color:$color-white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50px; 
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    box-shadow: 0px 2px 10px black; 
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    
+  } 
+  &__search{
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+    gap: 10px;
+    &__glass {
+      width: 20px;
+      height: 20px;
+    }
+    &__searchbar {
+      width: 100%;
+      border: none;
+      &::placeholder{
+        color: black;
+        opacity: 50%;
+      }
+    }
+  }
+}
+
+.cart {
+    display: flex;
+    bottom: 0px;
+    background-color:#32A89C;
+    ;
+    font-family: 'Lato', sans-serif;
+    width: 100;
+    padding: 10px;
+    .txtcart {
+      display: flex;
+      padding-left: 30px;
+      align-items: center;
+      color: $color-white;
+      font-size: 30px;
+      font-family: 'Lato', sans-serif;
+    }
+    }
+
+    
+
+
