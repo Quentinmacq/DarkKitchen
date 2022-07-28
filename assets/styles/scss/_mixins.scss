@@ -1,0 +1,21 @@
+@mixin fontsizetoem($px){
+    $em : ($px/16)+em;
+    font-size: $em;
+}
+@mixin crossbar($horizontal){
+    @if $horizontal {
+        width: 20px;
+        height: 5px;
+    }
+    @else{
+        height: 20px;
+        width: 5px;
+    }
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-white;
+}

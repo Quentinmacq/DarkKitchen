@@ -1,0 +1,53 @@
+h2{
+    @include fontsizetoem(20);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.food{
+    min-width: 360px;
+    width: 360px;
+    // background-color: black;
+    &__card{
+        display: flex;
+        background-color: $color-white;
+        margin: 20px 0;
+        &__container{
+            aspect-ratio: 133/100;
+            margin-right: 10px;
+            height: 100px;
+            &__image{
+                height: 100%;
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            p{
+                display: block;
+            }
+            &__price{
+                margin-top: auto;
+                margin-bottom: 5px;
+                @include fontsizetoem(20);
+            }
+        }
+        &__add{
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+            background-color: $color-dark-orange;
+            font-weight: bolder;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            margin-top: auto;
+            margin-left: auto;
+            position: relative;
+            &::before{
+                @include crossbar(true);
+            }
+            &::after{
+                @include crossbar(false);
+            }
+        }
+    }
+}
