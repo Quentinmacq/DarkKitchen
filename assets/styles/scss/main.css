@@ -65,4 +65,23 @@ input {
   color: #f7f7f7;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.footer {
+  background-color: #f58e76;
+  width: 390px;
+  height: 50px;
+  display: flex;
+}
+.footer .footer__list {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  color: #f7f7f7;
+}
+.footer .footer__list li a {
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
