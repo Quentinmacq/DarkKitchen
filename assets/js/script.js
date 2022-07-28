@@ -110,6 +110,7 @@ const collection = fetch("assets/datas/collection.json")
                     typeDrink.appendChild(document.createTextNode(el.type));
                     divInfo.appendChild(typeDrink);
 
+                    //added span
                     const spanAdd = document.createElement("span");
                     spanAdd.className = "food__card__add";
                     divCard.appendChild(spanAdd);
@@ -146,6 +147,7 @@ const collection = fetch("assets/datas/collection.json")
                 divInfo.appendChild(desPrice)
                 
                 
+                    //added span
 
                 const spanAdd = document.createElement("span");
                 spanAdd.className = "food__card__add";
@@ -198,6 +200,7 @@ const collection = fetch("assets/datas/collection.json")
                    toPay.appendChild(document.createTextNode(el.prix));
                    divInfo.appendChild(toPay);
 
+                    //added span
 
                    const spanAdd = document.createElement("span");
                    spanAdd.className = "food__card__add";
