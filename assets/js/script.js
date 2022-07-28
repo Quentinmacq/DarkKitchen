@@ -1,20 +1,15 @@
-// async function fetchCollection() {
-//     const response = await fetch('assets/datas/collection.json');
-//     const data =await response.json(); 
+// function fetchCollection() {
+//     const response =fetch('assets/datas/collection.json');
+//     const data = response.json(); 
 
 
 //     return data;
 // }
-// const collection = fetchCollection();
-
+// const collection =fetchCollection();
+// console.log(collection);
 
 // tried to take datas for the Json file
-fetch("assets/datas/collection.json")
-    .then (response => response.json())
-    .then(data =>{
-        console.log(data.pizzas)
-        
-    })
+
 
 
     //take a parameter (an element, exemple: div)
@@ -48,7 +43,7 @@ const getInfoCard = (division) =>{
 
 const getFoodCard = () =>{
     const divCard = document.createElement("div");
-    getAppendchild(document.querySelector("main"), divCard);
+    document.querySelector("main").appendChild(divCard);
     const imgElement = document.createElement("img");
 
     const divImage = document.createElement("div");
@@ -63,7 +58,6 @@ const getFoodCard = () =>{
     divImage.appendChild(imgElement);
     divCard.appendChild(divTexte);
     
-
     getInfoCard(divTexte);
 }
 
@@ -71,8 +65,141 @@ const getFoodCard = () =>{
 
 
 
-// to execute the program
-getFoodCard();
+// // to execute the program
+
+const collection = fetch("assets/datas/collection.json")
+    .then (response => response.json())
+    .then(data =>{
+        const keys = Object.keys(data);
+        for (const key of keys) {
+
+            
+
+            
+            if (key == "drinks"){
+
+                data[key].map (el =>{
+
+                    const divCard = document.createElement("div");
+                    divCard.className= "food__card";
+                    document.querySelector("main").appendChild(divCard);
+
+                    const divInfo = document.createElement("div");
+                    divInfo.className = "info";
+                    divCard.appendChild(divInfo);
+                    const divContainer = document.createElement("div");
+                    divContainer.className = "food__card__container__image";
+                    divCard.appendChild(divContainer);
+
+                    const nameDrink = document.createElement("h2");
+                    nameDrink.className = "info__name";
+                    nameDrink.appendChild(document.createTextNode(el.nom));
+                    divInfo.appendChild(nameDrink);
+
+                    const priceDrink = document.createElement("p");
+                    priceDrink.className = "info__price"
+                    priceDrink.appendChild(document.createTextNode(el.prix));
+                    divInfo.appendChild(priceDrink);
+
+                    const quantDrink = document.createElement("p");
+                    quantDrink.className = "info__quantity";
+                    quantDrink.appendChild(document.createTextNode(el.quatity));
+                    divInfo.appendChild(quantDrink);
+
+                    const typeDrink = document.createElement("p");
+                    typeDrink.appendChild(document.createTextNode(el.type));
+                    divInfo.appendChild(typeDrink);
+                    
+                })
+            }else if(key == "desserts"){
+                data[key].map (el =>{
+
+                    const divCard = document.createElement("div");
+                    document.querySelector("main").appendChild(divCard);
+                    divCard.className = "food__card";
+
+                    const divInfo = document.createElement("div");
+                    divInfo.className = "info";
+                    divCard.appendChild(divInfo);
+                    const divContainer = document.createElement("div");
+                    divContainer.className = "food__card__container";
+                    divCard.appendChild(divContainer);
+                
+                const desTitle = document.createElement("h2");
+                desTitle.className = "info__name";
+                desTitle.appendChild(document.createTextNode(el.nom));
+                divInfo.appendChild(desTitle);
+
+                const desImage = document.createElement("img");
+                desImage.className = "food__card__container__image";
+                divContainer.appendChild(desImage);      
+                desImage.src = "assets/datas/Images/"+el.images;
+                
+
+                const desPrice = document.createElement("p");
+                desPrice.className = "info__price";
+                desPrice.appendChild(document.createTextNode(el.prix));
+                divInfo.appendChild(desPrice)
+                
+                
+
+              
+
+                })
+            }
+            
+            
+            
+            
+            
+            else{
+                
+                data[key].map(el =>{
+                    const divCard = document.createElement("div");
+                    document.querySelector("main").appendChild(divCard);
+                    divCard.className = "food__card";
+
+                    const divInfo = document.createElement("div");
+                    divInfo.className = "info";
+                    divCard.appendChild(divInfo);
+                    const divContainer = document.createElement("div");
+                    divContainer.className = "food__card__container";
+                    divCard.appendChild(divContainer);
+
+                    const imageFood = document.createElement("img");
+                    imageFood.className = "info__card__container__image"
+                    imageFood.src = "assets/datas/Images/"+el.images;
+                    divContainer.appendChild(imageFood);
+                    const title = document.createElement("h2");
+                    title.className = "info__name";
+                    divInfo.appendChild(title);
+                    title.appendChild(document.createTextNode(el.nom));
+
+                    const base = document.createElement("p");
+                    base.className = "info__base";
+                    base.appendChild(document.createTextNode(el.base));
+
+                    const ingredient = document.createElement("p");
+                    ingredient.className = "info__ingredient";
+                    divInfo.appendChild(ingredient);
+
+                    el.ingredients.map(ing =>{
+                        ingredient.appendChild(document.createTextNode(ing+" "));
+                    }).join("")
+                    
+                   const toPay = document.createElement("p");
+                   toPay.className = "info__price";
+                   toPay.appendChild(document.createTextNode(el.prix));
+                   divInfo.appendChild(toPay);
+
+
+
+
+                })
+            }
+
+        
+}})
 
 
 

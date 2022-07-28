@@ -91,7 +91,7 @@
 			"id":2,
 			"nom": "chocolate mousse",
 			"prix": 2.5,
-			"images":"../datas/Images/chocolate_mousse.jpg"
+			"images":"chocolate_mousse.jpg"
 		}
 	]
 }
