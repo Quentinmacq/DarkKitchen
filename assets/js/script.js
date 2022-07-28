@@ -103,7 +103,7 @@ const collection = fetch("assets/datas/collection.json")
 
                     const quantDrink = document.createElement("p");
                     quantDrink.className = "info__quantity";
-                    quantDrink.appendChild(document.createTextNode(el.quatity));
+                    quantDrink.appendChild(document.createTextNode(el.quantity));
                     divInfo.appendChild(quantDrink);
 
                     const typeDrink = document.createElement("p");
@@ -120,10 +120,11 @@ const collection = fetch("assets/datas/collection.json")
 
                     const divInfo = document.createElement("div");
                     divInfo.className = "info";
-                    divCard.appendChild(divInfo);
                     const divContainer = document.createElement("div");
                     divContainer.className = "food__card__container";
                     divCard.appendChild(divContainer);
+
+                    divCard.appendChild(divInfo);
                 
                 const desTitle = document.createElement("h2");
                 desTitle.className = "info__name";
@@ -161,13 +162,13 @@ const collection = fetch("assets/datas/collection.json")
 
                     const divInfo = document.createElement("div");
                     divInfo.className = "info";
-                    divCard.appendChild(divInfo);
                     const divContainer = document.createElement("div");
                     divContainer.className = "food__card__container";
                     divCard.appendChild(divContainer);
+                    divCard.appendChild(divInfo); //modif
 
                     const imageFood = document.createElement("img");
-                    imageFood.className = "info__card__container__image"
+                    imageFood.className = "food__card__container__image"
                     imageFood.src = "assets/datas/Images/"+el.images;
                     divContainer.appendChild(imageFood);
                     const title = document.createElement("h2");
