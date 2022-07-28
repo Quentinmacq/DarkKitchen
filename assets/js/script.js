@@ -109,6 +109,10 @@ const collection = fetch("assets/datas/collection.json")
                     const typeDrink = document.createElement("p");
                     typeDrink.appendChild(document.createTextNode(el.type));
                     divInfo.appendChild(typeDrink);
+
+                    const spanAdd = document.createElement("span");
+                    spanAdd.className = "food__card__add";
+                    divCard.appendChild(spanAdd);
                     
                 })
             }else if(key == "desserts"){
@@ -143,7 +147,9 @@ const collection = fetch("assets/datas/collection.json")
                 
                 
 
-              
+                const spanAdd = document.createElement("span");
+                spanAdd.className = "food__card__add";
+                divCard.appendChild(spanAdd);
 
                 })
             }
@@ -192,6 +198,10 @@ const collection = fetch("assets/datas/collection.json")
                    toPay.appendChild(document.createTextNode(el.prix));
                    divInfo.appendChild(toPay);
 
+
+                   const spanAdd = document.createElement("span");
+                   spanAdd.className = "food__card__add";
+                   divCard.appendChild(spanAdd);
 
 
 
